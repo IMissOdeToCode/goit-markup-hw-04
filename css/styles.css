@@ -58,6 +58,8 @@ a {
 }
 
 .section {
+	max-width: 1600px;
+	margin: 0 auto;
 	padding: 94px 0;
 }
 
@@ -143,6 +145,19 @@ body {
 	display: flex;
 	margin-left: auto;
 }
+
+.contact-nav .item .link {
+	display: flex;
+	align-items: center;
+}
+
+.logo-contact {
+	fill: currentColor;
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+}
+
 .site-nav .item + .item {
 	margin-left: 50px;
 }
@@ -162,6 +177,7 @@ body {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
+
 .site-nav .link {
 	display: block;
 	padding-top: 32px;
@@ -169,6 +185,7 @@ body {
 
 	color: var(--bc-black);
 }
+
 .contact-nav .link {
 	display: block;
 	padding-top: 32px;
@@ -180,6 +197,7 @@ body {
 .link:hover,
 .link:focus {
 	color: var(--bc-blue);
+	fill: var(--bc-blue);
 }
 
 nav {
@@ -191,6 +209,8 @@ nav {
 	align-items: center;
 }
 .line {
+	max-width: 1600px;
+	margin: 0 auto;
 	border-bottom: 1px solid var(--bc-header-line);
 }
 
@@ -451,7 +471,14 @@ nav {
 }
 
 /* footer */
+.footer-box {
+	display: flex;
+	align-items: baseline;
+}
+
 .page-footer {
+	max-width: 1600px;
+	margin: 0 auto;
 	background-color: var(--bc-background);
 	padding: 60px 0;
 }
@@ -481,6 +508,42 @@ nav {
 .page-footer .link:hover,
 .page-footer .link:focus {
 	color: var(--bc-blue);
+}
+
+.social-block {
+	margin-left: 95px;
+}
+
+.social-block-header {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--bc-white);
+}
+
+.company-social-link {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.company-link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: var(--bc-white);
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.company-link:hover {
+	background-color: var(--bc-blue);
+	color: var(--bc-white);
 }
 
 /* ---------- Portfolio ---------- */
@@ -521,6 +584,10 @@ nav {
 .filter:focus {
 	color: var(--bc-white);
 	background-color: var(--bc-blue);
+	/* prettier-ignore*/
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+				0px 1px 2px rgba(0, 0, 0, 0.08), 
+				0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* result */
