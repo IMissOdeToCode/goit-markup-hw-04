@@ -364,19 +364,54 @@ nav {
 	margin-bottom: 10px;
 	padding: 0;
 }
+
 .card-descr {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
 
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 16px;
 	padding: 0;
 }
+
 .team-card-descr {
 	background-color: #fff;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.team-social-link {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.team-member-link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: var(--bc-client);
+}
+
+.team-member-link:hover {
+	background-color: var(--bc-blue);
+	color: var(--bc-white);
+}
+
+.round-link {
+	display: block;
+	margin: 0 auto;
+	width: 20px;
+	height: 20px;
+}
+
+.logo-social {
+	fill: currentColor;
+	width: 20px;
+	height: 20px;
 }
 
 /* our clients */
