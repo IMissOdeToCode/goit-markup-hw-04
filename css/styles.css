@@ -40,7 +40,7 @@ a {
 	--bc-background: #2f303a;
 	--bc-light_backgroung: #f5f4fa;
 	--bc-header-line: #ececec;
-
+	--bc-hero-gradient: rgba(47, 48, 58, 0.4);
 	--bc-semi-white: rgb(255 255 255 / 0.6);
 
 	--card-set-gap: 30px;
@@ -192,12 +192,30 @@ nav {
 	border-bottom: 1px solid var(--bc-header-line);
 }
 
+.mail::before {
+}
+
+.phone {
+}
+
 /* hero */
 .hero-rect {
+	max-width: 1600px;
+	max-height: 600px;
+	margin: 0 auto;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-color: var(--bc-background);
 	text-align: center;
+
+	/* prettier-ignore*/
+	background-image: linear-gradient(to right, 
+	var(--bc-hero-gradient), 
+	var(--bc-hero-gradient)),
+	url(../images/hero-background.jpg);
+	background-color: var(--bc-background);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-title {
@@ -261,6 +279,34 @@ nav {
 
 .feature-container .item {
 	width: 270px;
+}
+
+.feature::before {
+	content: "";
+	display: block;
+	height: 120px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	background-size: 70px 70px;
+	background-color: var(--bc-light_backgroung);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-antenna::before {
+	background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+	background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+	background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+	background-image: url(../images/astronaut.svg);
 }
 
 /* what_are_we_doing */
